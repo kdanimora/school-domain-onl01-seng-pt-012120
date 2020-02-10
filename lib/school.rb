@@ -20,5 +20,12 @@ def grade(grade)
   if @roster.include?(grade)
     p @roster[grade]
 end 
+end 
+
+
+def sort 
+  @roster.each {|key, val| val.sort!}
+end
+
 
 end 
