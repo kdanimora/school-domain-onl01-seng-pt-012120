@@ -1,9 +1,14 @@
 # code here
 
-school = School.new("Bayside High School")
+class school
+  attr_reader :roster, :new
 
-class initialize(name)
-  @name = name 
+def initialize(name)
+  @new = new 
+  @roster = {}
+end 
+
+
 school.add_student("Zach Morris", 9)
 school.add_student("Kelly Kapowski", 10)
 school.add_student("Screech", 11)
