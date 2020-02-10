@@ -8,14 +8,17 @@ def initialize(name)
   @roster = {}
 end 
 
-
-school.add_student("Zach Morris", 9)
-school.add_student("Kelly Kapowski", 10)
-school.add_student("Screech", 11)
-school.roster
+def add_student(name, grade)
+  if roster.include?(grade)
+    @roster[grade] << name
+  else 
+    roster[grade] = [name]
+  end 
 end 
 
-def school.grade(9)
+def grade(grade)
+  if @roster.include?(grade)
+    p @roster[grade]
 end 
 
 end 
